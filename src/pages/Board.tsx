@@ -1,27 +1,56 @@
+import { useState } from "react";
 import Title from "../ui/Title"
 
 
 export default function Board() {
+  const [ action , setAction ] = useState<boolean>(false);
   
-  const boardlist: string[] = [
-    "첫 번째 게시글입니다.",
-    "새로운 공지사항을 알려드리니다.",
-    "행사 일정 변경 안내드립니다.",
-    "고객 문의 답변 관련 안내",
-    "서비스 점검 안내드립니다.",
-    "커뮤니티 이용 가이드라인",
-    "자주 묻는 질문 모음",
-    "신규 기능 업데이트 안내",
-    "오늘의 소소한 이야기 공유",
-    "커뮤니티 참여 이벤트 안내",
-  ];
+  interface BoardItem {
+    subject: string;
+    content: string;
+}
+
+
+const boardlist: BoardItem[] = [
+    {
+        subject: "첫 번째 게시글",
+        content: "첫 번째 게시글입니다."
+    },
+    {
+        subject: "공지사항",
+        content: "새로운 공지사항을 알려드립니다."
+    },
+    {
+        subject: "행사 일정 변경",
+        content: "행사 일정 변경 안내드립니다."
+    },
+    {
+        subject: "고객 문의 안내",
+        content: "고객 문의 답변 관련 안내"
+    },
+    {
+        subject: "서비스 점검 안내",
+        content: "서비스 점검 안내드립니다."
+    },
+    {
+        subject: "커뮤니티 가이드",
+        content: "커뮤니티 이용 가이드라인"
+    }
+];
+
 
   return (
     <section>
       <Title bigtitle="커뮤니티" subtitle="자유롭게 의견을 나누는 공간입니다."></Title>
       <ul className="text-white text-[36px] mx-auto w-[1024px] flex flex-col gap-4 mt-20">
       {
-       boardlist.map((item) => <li className="border-b-2">{item}</li>)
+       boardlist.map((item) => <li className="border-b-2">
+        <h3 className="text-2xl font-bold mb-2" 
+         onClick={ ()=> { setAction(!action); } } > {item.subject} </h3>
+        {
+          action && <p className="text-xl">{item.content}</p>
+        }
+        </li> )
       }
       </ul>
     </section>
