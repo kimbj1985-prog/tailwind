@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Title from "../ui/Title"
-
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid";
 
 export default function Board() {
   const [ action , setAction ] = useState<number | null>(null);
@@ -45,11 +45,25 @@ const boardlist: BoardItem[] = [
       <Title bigtitle="커뮤니티" subtitle="자유롭게 의견을 나누는 공간입니다."></Title>
       <ul className="text-white text-[36px] mx-auto w-[1024px] flex flex-col gap-4 mt-20">
       {
-       boardlist.map( ( item, idx ) => <li className="border-b-2" key={idx}>
-        <h3 className="text-2xl font-bold mb-2" 
-         onClick={ ()=> { setAction(action === idx ? null : idx); } } > {item.subject} </h3>
+       boardlist.map( ( item, idx ) => <li className={  `${ action !== idx && "border-b-2" } ` } key={idx}>
+        <h3 className={`text-2xl ${ action === idx && "font-bold" } mb-2
+         flex justify-between items-center `} 
+         onClick={ ()=> { setAction(action === idx ? null : idx); } } > 
+        
+        {item.subject}
+
+       <div className="flex p-2">
         {
-          action === idx && <p className="text-xl">{item.content}</p>
+          action === idx ? 
+          <ChevronUpIcon className="w-[25px] h-[25px]"></ChevronUpIcon> :
+          <ChevronDownIcon className="w-[25px] h-[25px]"></ChevronDownIcon>
+          
+        }
+       </div>
+
+        </h3>
+        {
+          action === idx && <p className="text-xl p-5 bg-gray-800">{item.content}</p>
         }
         </li> )
       }
