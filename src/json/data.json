@@ -26,5 +26,51 @@
         }
 
 
-    ]
+    ],
+    "mainProduct" : {
+        "title": "겨울 룩을 포근하게 완성하는 부클 아이템",
+        "products": [
+            {
+            "brand": "HUNTER",
+            "name": "[UNISEX] 체르파 폰파우치 - 블랙",
+            "price_sell": 39600,
+            "price_original": 99000,
+            "delivery": "바로도착",
+            "image": "/product/f1.jpg"
+            },
+            {
+            "brand": "HUNTER",
+            "name": "[WOMEN] 시어링 인슐레이티드 숏 스노우부츠 - 블랙",
+            "price_sell": 209300,
+            "price_original": 299000,
+            "delivery": "바로도착",
+            "image": "/product/f2.jpg"
+            },
+            {
+            "brand": "HUNTER",
+            "name": "[WOMEN] 시어링 인슐레이티드 숏 스노우부츠 - 화이트",
+            "price_sell": 209300,
+            "price_original": 299000,
+            "delivery": "바로도착",
+            "image": "/product/f3.jpg"
+            },
+            {
+            "brand": "HUNTER",
+            "name": "[WOMEN] 시어링 인슐레이티드 롱 스노우부츠 - 블랙",
+            "price_sell": 237300,
+            "price_original": 339000,
+            "delivery": "바로도착",
+            "image": "/product/f4.jpg"
+            },
+            {
+            "brand": "HUNTER",
+            "name": "[WOMEN] 시어링 인슐레이티드 롱 스노우부츠 - 화이트",
+            "price_sell": 237300,
+            "price_original": 339000,
+            "delivery": "바로도착",
+            "image": "/product/f5.jpg"
+            }
+        ]     
+    }
+
 }

@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #1e1e1e;
-}
 h2{
   font-family: "SF Pro Display";
 }

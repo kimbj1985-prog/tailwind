@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '1550': '1550px'
+      },
       colors : {
        
         main : "#ac441e",
@@ -17,7 +20,7 @@ export default {
         en : ['Montserrat', 'sans-serif'],
       },
       fontSize : {
-        title : '28px',
+        title : '30px',
         subtitle : '18px',
         base : '16px',
         sm : '14px',
