@@ -7,12 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 import mainData from '../json/data.json';
-import type { MainBannerJson, MainProductResponse } from '../types/banner';
+import type { MainBannerJson } from '../types/banner';
+
+import Productset from '../component/Productset';
 
 export default function Home() {
 
   const banners = mainData.mainBanner as MainBannerJson['mainBanner'];
-  const products = mainData.mainProduct as MainProductResponse['mainProduct'];
+
 
   return (
     <div className="">
@@ -53,34 +55,8 @@ export default function Home() {
       }
       </Swiper>
 
-      <section className='max-w-1550 mx-auto py-[100px]'>
-        <h2 className='text-title font-600 mb-[30px]'>
-          { products.title }
-        </h2>
-        <ul className='flex gap-[16px]'>
-          {
-              products.products.map((v, i)=>{
-                return(
-                  <li key={i} className='flex-1'>
-                        <img src={v.image}></img>
-                        <div className='flex flex-col gap-[8px]'>
-                          <p>{v.brand}</p>
-                          <p className='mb-2'>{v.name}</p>
-                          <p className='flex gap-4 items-end'>
-                            <span className='font-500 text-main'>{Math.round( (1 - v.price_sell / v.price_original) * 100)}%</span>
-                            <span>{v.price_sell.toLocaleString()}원</span> 
-                            <span>{v.price_original.toLocaleString()}원</span>
-                            </p>
-                        </div>
-                  </li>
-                )
-              })
-          }
-        </ul>
-        
-
-      </section>
-     
-        </div>
+      
+       <Productset></Productset>
+    </div>
   )
 }

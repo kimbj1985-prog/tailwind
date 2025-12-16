@@ -19,7 +19,7 @@ export interface ProductItem {
   price_sell: number
   price_original: number
   delivery: string
-  image; string
+  image: string
 }
 
 export interface MainProductResponse {
