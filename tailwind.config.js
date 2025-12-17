@@ -21,6 +21,7 @@ export default {
       },
       fontSize : {
         title : '30px',
+        navi : '24px',
         subtitle : '18px',
         base : '16px',
         sm : '14px',
