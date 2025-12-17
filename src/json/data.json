@@ -28,49 +28,214 @@
 
     ],
     "mainProduct" : {
-        "title": "겨울 룩을 포근하게 완성하는 부클 아이템",
+        "title": "겨울 룩을 포근하게 완성하는 놓칠수 없는 할인행사",
         "products": [
-            {
-            "brand": "HUNTER",
-            "name": "[UNISEX] 체르파 폰파우치 - 블랙",
-            "price_sell": 39600,
-            "price_original": 99000,
-            "delivery": "바로도착",
-            "image": "/product/f1.jpg"
-            },
-            {
-            "brand": "HUNTER",
-            "name": "[WOMEN] 시어링 인슐레이티드 숏 스노우부츠 - 블랙",
-            "price_sell": 209300,
-            "price_original": 299000,
-            "delivery": "바로도착",
-            "image": "/product/f2.jpg"
-            },
-            {
-            "brand": "HUNTER",
-            "name": "[WOMEN] 시어링 인슐레이티드 숏 스노우부츠 - 화이트",
-            "price_sell": 209300,
-            "price_original": 299000,
-            "delivery": "바로도착",
-            "image": "/product/f3.jpg"
-            },
-            {
-            "brand": "HUNTER",
-            "name": "[WOMEN] 시어링 인슐레이티드 롱 스노우부츠 - 블랙",
-            "price_sell": 237300,
-            "price_original": 339000,
-            "delivery": "바로도착",
-            "image": "/product/f4.jpg"
-            },
-            {
-            "brand": "HUNTER",
-            "name": "[WOMEN] 시어링 인슐레이티드 롱 스노우부츠 - 화이트",
-            "price_sell": 237300,
-            "price_original": 339000,
-            "delivery": "바로도착",
-            "image": "/product/f5.jpg"
-            }
-        ]     
-    }
+    {
+      "brand": "HUNTER",
+      "name": "[UNISEX] 체르파 폰파우치 - 블랙",
+      "price_sell": 39600,
+      "price_original": 99000,
+      "delivery": "바로도착",
+      "image": "/product/f1.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-10"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 시어링 인슐레이티드 숏 스노우부츠 - 블랙",
+      "price_sell": 299000,
+      "price_original": 299000,
+      "delivery": "바로도착",
+      "image": "/product/f3.jpg",
+      "노출": false,
+      "등록날짜": "2025-12-05"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 시어링 인슐레이티드 숏 스노우부츠 - 화이트",
+      "price_sell": 209300,
+      "price_original": 299000,
+      "delivery": "바로도착",
+      "image": "/product/f2.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-14"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 롱 스노우부츠 - 블랙",
+      "price_sell": 339000,
+      "price_original": 339000,
+      "delivery": "바로도착",
+      "image": "/product/f5.jpg",
+      "노출": false,
+      "등록날짜": "2025-11-28"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 롱 스노우부츠 - 화이트",
+      "price_sell": 237300,
+      "price_original": 339000,
+      "delivery": "바로도착",
+      "image": "/product/f4.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-12"
+    },
 
+    {
+      "brand": "HUNTER",
+      "name": "[MEN] 윈터 숏 부츠 - 블랙",
+      "price_sell": 189000,
+      "price_original": 189000,
+      "delivery": "바로도착",
+      "image": "/product/f2.jpg",
+      "노출": false,
+      "등록날짜": "2025-11-20"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[MEN] 윈터 숏 부츠 - 네이비",
+      "price_sell": 159000,
+      "price_original": 199000,
+      "delivery": "바로도착",
+      "image": "/product/f1.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-16"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[UNISEX] 플리스 미니백",
+      "price_sell": 79000,
+      "price_original": 79000,
+      "delivery": "바로도착",
+      "image": "/product/f3.jpg",
+      "노출": false,
+      "등록날짜": "2025-10-30"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 레인 앵클 부츠 - 블랙",
+      "price_sell": 99000,
+      "price_original": 129000,
+      "delivery": "바로도착",
+      "image": "/product/f4.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-15"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 레인 앵클 부츠 - 베이지",
+      "price_sell": 129000,
+      "price_original": 129000,
+      "delivery": "바로도착",
+      "image": "/product/f5.jpg",
+      "노출": false,
+      "등록날짜": "2025-11-02"
+    },
+
+    {
+      "brand": "HUNTER",
+      "name": "[MEN] 방한 레인부츠 - 블랙",
+      "price_sell": 219000,
+      "price_original": 259000,
+      "delivery": "바로도착",
+      "image": "/product/f1.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-11"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[MEN] 방한 레인부츠 - 카키",
+      "price_sell": 259000,
+      "price_original": 259000,
+      "delivery": "바로도착",
+      "image": "/product/f2.jpg",
+      "노출": false,
+      "등록날짜": "2025-11-18"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[UNISEX] 퍼 머플러",
+      "price_sell": 59000,
+      "price_original": 79000,
+      "delivery": "바로도착",
+      "image": "/product/f3.jpg",
+      "노출": true,
+      "등록날짜": "2025-12-17"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[UNISEX] 퍼 머플러",
+      "price_sell": 79000,
+      "price_original": 79000,
+      "delivery": "바로도착",
+      "image": "/product/f4.jpg",
+      "노출": false,
+      "등록날짜": "2025-10-25"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 미들 레인부츠",
+      "price_sell": 139000,
+      "price_original": 179000,
+      "delivery": "바로도착",
+      "image": "/product/f5.jpg",
+      "노출": false,
+      "등록날짜": "2025-12-13"
+    },
+
+    {
+      "brand": "HUNTER",
+      "name": "[WOMEN] 미들 레인부츠",
+      "price_sell": 179000,
+      "price_original": 179000,
+      "delivery": "바로도착",
+      "image": "/product/f1.jpg",
+      "노출": false,
+      "등록날짜": "2025-11-08"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[MEN] 윈터 슬리퍼",
+      "price_sell": 69000,
+      "price_original": 99000,
+      "delivery": "바로도착",
+      "image": "/product/f2.jpg",
+      "노출": false,
+      "등록날짜": "2025-12-18"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[MEN] 윈터 슬리퍼",
+      "price_sell": 99000,
+      "price_original": 99000,
+      "delivery": "바로도착",
+      "image": "/product/f3.jpg",
+      "노출": false,
+      "등록날짜": "2025-10-18"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[UNISEX] 방수 토트백",
+      "price_sell": 119000,
+      "price_original": 149000,
+      "delivery": "바로도착",
+      "image": "/product/f4.jpg",
+      "노출": false,
+      "등록날짜": "2025-12-09"
+    },
+    {
+      "brand": "HUNTER",
+      "name": "[UNISEX] 방수 토트백",
+      "price_sell": 149000,
+      "price_original": 149000,
+      "delivery": "바로도착",
+      "image": "/product/f5.jpg",
+      "노출": false,
+      "등록날짜": "2025-11-01"
+    }
+  ]
 }
+
+
+
+    }

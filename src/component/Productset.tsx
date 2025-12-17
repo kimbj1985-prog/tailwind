@@ -9,9 +9,9 @@ export default function Productset() {
         </h2>
         <ul className='flex gap-[16px]'>
           {
-              products.products.map((v, i)=>{
+              products.products.filter((v)=>v.노출 && v.price_sell !== v.price_original).slice(0,6).map((v, i)=>{
                 return(
-                  <li key={i} className='flex-1'>
+                   <li key={i} className='flex-1'>
                         <img src={v.image}></img>
                         <div className='flex flex-col gap-[8px]'>
                           <p>{v.brand}</p>
@@ -23,6 +23,7 @@ export default function Productset() {
                             </p>
                         </div>
                   </li>
+                  
                 )
               })
           }
