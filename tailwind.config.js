@@ -36,7 +36,13 @@ export default {
         semiBold : '600',
         bold : '700',
         black : '900',     
-      }
+      },
+      screens: {
+      xs: '375px',   // 모바일 소형
+      sm: '578px',   // 모바일
+      md: '820px',   // 태블릿
+      xl: '1550px',  // 대형 데스크탑
+    },
   },
   plugins: [],
 }

@@ -11,9 +11,9 @@ interface PopupProps {
 export default function Popup({ setIsPopshow }: PopupProps ) {
   return (
     <div className="fixed top-0 w-full h-full start-0 bg-black/70 z-[100000]
-                    flex flex-col justify-center items-center popup">
+                    flex flex-col justify-center items-center popup px-4">
 
-        <div className="text-white flex justify-between items-center w-full max-w-[600px] pg-2 px-2">
+        <div className="text-white flex justify-between items-center w-full md:max-w-[600px] pg-2 px-2">
             <p>
                 오늘 하루 닫기
             </p>
@@ -21,7 +21,7 @@ export default function Popup({ setIsPopshow }: PopupProps ) {
         </div>
 
         <Swiper
-            className="max-w-[600px] rounded-[30px] overflow-hidden"
+            className="md:max-w-[600px] w-full rounded-[30px] overflow-hidden"
             spaceBetween={0}
             slidesPerView={1}
             modules={[Pagination, Autoplay]}
@@ -35,13 +35,13 @@ export default function Popup({ setIsPopshow }: PopupProps ) {
         loop={true}
         >
             <SwiperSlide>
-                <img src="/popup/1.jpg"></img>
+                <img src="/popup/1.jpg" className="w-full"></img>
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/popup/2.jpg"></img>
+                <img src="/popup/2.jpg" className="w-full"></img>
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/popup/3.jpg"></img>
+                <img src="/popup/3.jpg" className="w-full"></img>
             </SwiperSlide>
         </Swiper>
 
