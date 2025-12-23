@@ -1,31 +1,24 @@
 import mainData from '../json/data.json';
 import type {  MainProductResponse } from '../types/banner';
+import Productinfo from './Productinfo';
+
 export default function Productset() {
-      const products = mainData.mainProduct as MainProductResponse['mainProduct'];
+      const products = mainData.mainProduct as MainProductResponse['mainProduct'];      
       let count = 0;
 
   return (
-    <section className='max-w-1550 mx-auto py-[100px]'>
-        <h2 className='text-title font-600 mb-[30px]'>
+    <section className='max-w-1550 mx-auto py-[100px] px-5 xl:px-0'>
+        <h2 className='text-title font-semiBold mb-[30px]'>
           { products.title.split("|")[0] }
         </h2>
-        <ul className='grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap=3'>
+        <ul className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-4 gap-5'>
           {
               products.products.map((v, i)=>{
                 return(
-                  v.노출 && v.price_sell !== v.price_original && count < 6 && ++count && <li key={i} className='border pb-5 px-5'>
-                        <img src={v.image}></img>
-                        <div className='flex flex-col gap-[8px]'>
-                          <p>{v.brand}</p>
-                          <p className='mb-2'>{v.name}</p>
-                          <p className='flex gap-4 items-end'>
-                            <span className='font-500 text-main'>{Math.round( (1 - v.price_sell / v.price_original) * 100)}%</span>
-                            <span>{v.price_sell.toLocaleString()}원</span> 
-                            <span>{v.price_original.toLocaleString()}원</span>
-                            </p>
-                        </div>
-                  </li>
-                  
+                  v.노출 && v.price_sell !== v.price_original && count < 8 && ++count && <li key={i} 
+                        className={`pb-5 flex flex-col ${ count > 6 ? "hidden lg:flex" : "flex"}`}>
+                        <Productinfo v={v}></Productinfo>
+                  </li>                 
                 )
               })
           }

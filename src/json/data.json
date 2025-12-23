@@ -179,7 +179,7 @@
       "price_original": 179000,
       "delivery": "바로도착",
       "image": "/product/f5.jpg",
-      "노출": false,
+      "노출": true,
       "등록날짜": "2025-12-13"
     },
 

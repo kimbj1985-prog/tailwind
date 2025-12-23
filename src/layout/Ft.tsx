@@ -1,22 +1,30 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { use, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 
 export default function Ft() {
+
   const [ plusarrow, setPlusarrow ] = useState<boolean>(true);
+  const [ helpopen, setHelpopen ] = useState<boolean>(true);
+  const [ comeopen, setComeopen ] = useState<boolean>(true);
+
+  const location = useLocation(); //주소창분석
+  const isAbout : boolean = location.pathname === "/about"; //첫페이지구분
+
 
   return (
-    <footer className="ft border-t-2 font-300 mt-[100px]">
+    <footer className={`ft border-t-2 font-300 ${ isAbout ? "" : "mt-[clamp(20px,5vw,100px)]" } `}>
       <div className="max-w-1550 px-5 gap-[60px] w-full mx-auto py-[50px] flex justify-between">
         <div className="logo hidden xl:block">
           <img src="/logo.svg" className="w-[150px]"></img>
         </div>
         <div className="flex-1 grid grid-cols-12 font-kr leadin-[1.8]">
           <div className="lg:col-span-4 md:col-span-6 col-span-12 companyinfo xl:order-first order-last">
-            <h3 className="font-bold text-subtitle mb-3">주식회사 포랩코리아
-              <button className="md:hidden">+</button>
-            </h3>
-            <div className="hidden md:block">
+            <h3 onClick={()=>{setComeopen(!comeopen)}} className="font-bold text-subtitle mb-3 flex justify-between border-b-2 md:border-none">주식회사 포랩코리아
+              <button className="md:hidden" >
+                { comeopen ? "+" : "-"}
+                </button></h3>
+            <div className={` ${ comeopen ? "hidden" : "" } md:block`}>
               <span className="font-medium">대표 : </span> 강동균<br />
               <span className="font-medium">사업자등록번호 : </span> 578-81-03310 <a href=""> [사업자정보확인]</a><br />
               <span className="font-medium">통신판매업신고번호 : </span> 2024-서울마포-0658 호<br />
@@ -56,10 +64,12 @@ export default function Ft() {
                 </div>
             </div>
             <div className="flex-1 font-en flex flex-col helpcontent flex-1 mt-10 lg:mt-0">
-              <h3 className="font-bold text-subtitle mb-3 flex justify-between border-b-2 md:border-none">HELP 
-                <button className="md:hidden">+</button>
+              <h3 onClick={()=>{setHelpopen(!helpopen)}} className="font-bold text-subtitle mb-3 flex justify-between border-b-2 md:border-none">HELP 
+                <button className="md:hidden" >
+                  { helpopen ? "+" : "-"}
+                  </button>
                 </h3>
-              <div className="hidden md:block">
+              <div className={` ${ helpopen ? "hidden" : "" } md:block mb-4 md:mb-0 `} >
                 <ul>
                   <li>
                     <Link to="/store">매장안내</Link>
