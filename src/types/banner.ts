@@ -14,6 +14,7 @@ export interface MainProduct {
 }
 
 export interface ProductItem {
+  productid : number
   brand?: string
   name: string
   price_sell: number

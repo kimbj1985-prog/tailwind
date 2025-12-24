@@ -21,7 +21,7 @@ const products: Product[] = [
   { name: "방수 블루투스 스피커", price: 52000, img : "3.jpg" }
 ];
   return (
-    <section>
+    <section className="px-5">
       <Title bigtitle="제품소개" subtitle="25년 업계 최초 인증제품을 소개합니다."></Title>
        <ul className="grid lg:grid-cols-3 gap-[clamp(15px,5vw,30px)] grid-cols-2 max-w-[1024px] w-full mx-auto mt-[clamp(2.5rem,3.8vw,10rem)]">
       {
@@ -33,17 +33,17 @@ const products: Product[] = [
                               <div>
                                 <img src={`/${v.img}`} className="rounded-[20px] "></img>
                               </div>
-                              <div className="flex justify-between py-4">
+                              <div className="flex flex-col md:flex-row text-[clamp(18px,3vw,20px)] font-kr md:justify-between py-4">
                                    <p >{v.name}</p>
-                                   <p className="price text-[#ff5722]">
+                                   <p className="price text-[#ff5722] font-en">
                                     {v.price}
-                                    <span className="text-[#555]">원</span>
+                                    <span className="text-[#999] font-thin text-[0.9em]">원</span>
                                    </p>
                               </div>
                           </li>
-          )
-      )
-      }
+                          )
+                    )
+          }
       </ul>
     </section>
   )
