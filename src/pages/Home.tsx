@@ -25,6 +25,7 @@ export default function Home() {
     <div className="">
       { isPop && <Popup setIsPopshow={setisPopshow} ></Popup> }
       <Swiper
+        className='mainSilde'
         spaceBetween={0}
         slidesPerView={1}
         modules={[Navigation, Pagination, EffectFade, Autoplay]}

@@ -1,5 +1,6 @@
 #root{
     // 객체가 없는 경우 -> 동적객체인 경우 요소검사를 통해서 접근처리
+    .mainSilde{
     .swiper-button-prev,
     .swiper-button-next{
         width:3rem;
@@ -53,7 +54,7 @@
         p{ opacity: 1; transform: translateY(0%);}
     }
   }
-
+    }
   .popup{
        .swiper-pagination-fraction{
             left:unset;
