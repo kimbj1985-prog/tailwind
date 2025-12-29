@@ -4,7 +4,7 @@ kimbj1985는 Vite로 구축된 현대적인 React 기반 쇼핑몰 웹사이트 
 메인 홈, 신상품, 이벤트, 커뮤니티 등 여러 페이지를 제공합니다.<br>
 
 kimbj1985_React <br>
-● 깃허브 https://github.com/kimbj1985-prog/tailwind/edit/main/README.md <br>
+● 깃허브 https://github.com/kimbj1985-prog/tailwind <br>
 
 필수 요구사항 <br>
 ● vite 버전 : "^7.2.4" <br>
