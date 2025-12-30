@@ -4,6 +4,8 @@ import { Swiper , SwiperSlide } from 'swiper/react'; //슬라이드
 import { EffectFade, Autoplay } from "swiper/modules"; //슬라이드 옵션
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"; // ui모듈
 
+import Logo from '../ui/Logo';
+
 
 import 'swiper/css'; //슬라이드 스타일
 import "swiper/css/effect-fade"; 
@@ -72,8 +74,9 @@ export default function Hd() {
                        </div>
             <div className='flex justify-between align-center px-4 py-[35px]'>
                 <h1 className='flex flex-col items-center justify-center'>
-                    <a href="/" className='text-white font-en'>
-                      <img src="/logo.svg" className={`w-[60px] ${ isRoot ? scrolled ? "" :  "filter brightness-300" : "" }` }></img>
+                    <a href="/" className={`${ isRoot ? scrolled ? "" : "text-white" : "text-dark" } font-en `}>
+                       {/* <img src="/logo.svg" className={`w-[60px] ${ isRoot ? scrolled ? "" :  "filter brightness-300" : "" }` }></img> */}
+                        <Logo></Logo>
                     </a>
                 </h1>
                 <button className={`md:hidden w-[36px] ${ isRoot ? scrolled ? "" : "text-white" : ""}`} onClick={ () => { setAllmenu(!allmenu)}}>
