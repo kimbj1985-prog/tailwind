@@ -47,7 +47,7 @@ export default function Hd() {
   return (
     <header className={`fixed top-0 start-0 w-full border-bottom 
                       z-[1000] font-kr
-                      ${ scrolled ? " bg-white/10 backdrop-blur " : ""}
+                      ${ scrolled ? " bg-white/50 backdrop-blur " : ""}
                       `}>
                        <div className={`bg-black text-white text-center py-2
                         ${ scrolled ? " hidden " : ""}
@@ -73,7 +73,7 @@ export default function Hd() {
             <div className='flex justify-between align-center px-4 py-[35px]'>
                 <h1 className='flex flex-col items-center justify-center'>
                     <a href="/" className='text-white font-en'>
-                      <img src="/logo.svg" className={`w-[180px] ${ isRoot ? scrolled ? "" :  "filter  invert" : "" }` }></img>
+                      <img src="/logo.svg" className={`w-[60px] ${ isRoot ? scrolled ? "" :  "filter brightness-300" : "" }` }></img>
                     </a>
                 </h1>
                 <button className={`md:hidden w-[36px] ${ isRoot ? scrolled ? "" : "text-white" : ""}`} onClick={ () => { setAllmenu(!allmenu)}}>
